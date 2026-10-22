@@ -1,0 +1,33 @@
+{
+  "name": "resume-updater",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "node index.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danyll39/resume-updater.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danyll39/resume-updater/issues"
+  },
+  "homepage": "https://github.com/danyll39/resume-updater#readme",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^1.50.1",
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
